@@ -23,8 +23,8 @@ export default function Footer() {
         <Box sx={styles.left}>
           <Logo />
           <Text as="p">
-            &copy; {new Date().getFullYear()} All right reserved - Design &
-            Developed by RedQ, Inc
+            &copy; {new Date().getFullYear()} All right reserved
+            
           </Text>
         </Box>
       </Container>
