@@ -11,6 +11,7 @@ import Support from 'sections/support';
 import Clients from 'sections/clients';
 import Blog from 'sections/blog';
 import Faq from 'sections/faq';
+import CallToAction from 'components/footer/calltoaction';
 
 export default function IndexPage() {
   return (
@@ -28,6 +29,7 @@ export default function IndexPage() {
         <Clients />
         
         <Faq />
+      <CallToAction />
       </Layout>
     </ThemeProvider>
   );

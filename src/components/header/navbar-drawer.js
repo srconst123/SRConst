@@ -58,7 +58,12 @@ const NavbarDrawer = () => {
           ))}
         </Box>
         <Button variant="primary" sx={styles.donateNow}>
-          <a href="https://rzp.io/l/mOzQnYq">Book Now</a>
+          <a href="https://rzp.io/l/mOzQnYq">Book Now</a><style>{"\
+      .rr{\
+        color:white;\
+        text-decoration:none;\
+      }\
+    "}</style>
         </Button>
       </Box>
     </Drawer>

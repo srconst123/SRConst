@@ -59,19 +59,12 @@ const Faq = () => {
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 12, 17] }}
-          slogan="Get your question answer"
+          slogan="Get your questions answered"
           title="Frequently asked question"
         />
 
         <Accordion items={data} />
-        <Box sx={styles.loadMore}>
-          <Button><a className="rr" href= "mailto:adarsh.gupta.aura3@gmail.com">Still got Question? Contact us</a><style>{"\
-      .rr{\
-        color:#ECF2F7;\
-        text-decoration:none;\
-      }\
-    "}</style></Button>
-        </Box>
+    
       </Container>
     </section>
   );
