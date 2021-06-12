@@ -62,7 +62,7 @@ const styles = {
       lineHeight: [1.87, null, null, 2, null, 2.33],
       color: 'textSecondary',
       background: ['white',null,null,null,3],
-      opacity: '0.75',
+      opacity: '0.85',
       maxWidth: [null, null, 370, 460],
       m: ['20px auto 0', null, null, null, '25px auto 0'],
     },
