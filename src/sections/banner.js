@@ -19,6 +19,7 @@ const Banner = () => {
             <Text as="p">
             Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.
             </Text>
+            <br />
             <SubscriptionForm sx={styles.subscriptionForm} />
           </Box>
         </Box>
