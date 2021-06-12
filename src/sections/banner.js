@@ -17,7 +17,7 @@ const Banner = () => {
               Many things.
             </Heading>
             <Text as="p">
-              Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.
+            Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
           </Box>
@@ -58,9 +58,11 @@ const styles = {
       color: 'textSecondary',
     },
     p: {
-      fontSize: ['13px', null, null, 2, 3],
+      fontSize: ['15px', null, null, 2, 3],
       lineHeight: [1.87, null, null, 2, null, 2.33],
       color: 'textSecondary',
+      background: ['white',null,null,null,3],
+      opacity: '0.75',
       maxWidth: [null, null, 370, 460],
       m: ['20px auto 0', null, null, null, '25px auto 0'],
     },
