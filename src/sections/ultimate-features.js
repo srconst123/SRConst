@@ -16,43 +16,22 @@ const data = [
     id: 1,
     icon: icon1,
     path: '#!',
-    title: 'Vital Sustainability',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
+    title: 'EPC Service',
+    description: `We provide services like Bulk Material Handling System, Civil Construction, HVAC, Electrical , Building Management System(BMS) and other Electro-Mechanical work.`,
   },
   {
     id: 2,
     icon: icon2,
     path: '#!',
-    title: 'Entertainment and Sports',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
+    title: 'Project Management',
+    description: `We provide our expertise in Design, Engineering & Sourcing, Planning & Cost Control, Adhering to Project Timelines, Permissions & Approvals and Safe Work Practices at Project Site.`,
   },
   {
     id: 3,
     icon: icon3,
     path: '#!',
-    title: 'Health and Relaxation',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
-  },
-  {
-    id: 4,
-    icon: icon4,
-    path: '#!',
-    title: 'Business and Socialising',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
-  },
-  {
-    id: 5,
-    icon: icon5,
-    path: '#!',
-    title: 'Security and Privacy',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
-  },
-  {
-    id: 6,
-    icon: icon6,
-    path: '#!',
-    title: 'Elder care and Children’s activities',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet.`,
+    title: 'Construction',
+    description: `As a construction and contracting company, Sri Ram Construction successfully executed many commercial and residential projects as well as Civil & Electrical jobs for Jharkhand Electricity Board and Road Works.`,
   },
 ];
 
@@ -62,7 +41,7 @@ const UltimateFeatures = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Our feature list"
+          slogan="Our Range of Services"
           title="We've got all you need"
         />
         <Box sx={styles.grid}>

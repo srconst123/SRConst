@@ -12,8 +12,12 @@ export default [
     label: 'Feature',
   },
   {
-    path: 'blog',
-    label: 'Blog',
+    path: 'shreedham',
+    label: 'Shree Dham',
+  },
+  {
+    path: 'clients',
+    label: 'Clients',
   },
   {
     path: 'faq',

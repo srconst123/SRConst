@@ -4,30 +4,36 @@ import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
+import SectionHeading from 'components/section-heading';
 
 const list = [
-  'Feature 1',
-  'Feature 2',
-  'Feature 3',
-  'Feature 4',
-  'Feature 5',
-  'Feature 6',
+  'Gated Community',
+  'Landscape Garden',
+  'Car Parking',
+  '24x7 Security',
+  'Pool/Billiards',
+  'Badminton Court',
 ];
 
 const CustomerSupport = () => {
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" sx={styles.section} id="shreedham">
       <Container>
+      <SectionHeading slogan="Our Latest Project"></SectionHeading>
         <Box sx={styles.grid}>
+        
           <Box sx={styles.illustration}>
             <Image src={support} loading="lazy" alt="support" />
           </Box>
+          
           <Box sx={styles.content}>
+            
             <Heading sx={styles.title}>
-            NAME by Sri Ram Constructions.
+            Shree Dham Residential Complex 
             </Heading>
             <Text as="p" sx={styles.summary}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet. 
+            It is an upcoming project of Sri Ram Construction near Morabadi Ground. The Project is situated at a walking distance approx. 500 meter from Morabadi Football Ground, Ranchi.
+            <br /> The Project caters to the needs of EWS/LIG/MIG and falls under <b>Affordable Housing</b> having <b>1/2/3 BHK</b> suites.
             </Text>
 
             <Grid sx={styles.list} as="ul">

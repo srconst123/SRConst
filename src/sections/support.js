@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text } from 'theme-ui';
-import SupportType from 'components/cards/support-type';
 import Image from 'components/image';
 import illustration from 'assets/images/support-2.png';
 
@@ -29,8 +28,12 @@ const Support = () => {
                 About Us
               </Heading>
               <Text as="p" sx={styles.summary}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum, lorem non pretium finibus, erat urna vestibulum dolor, quis malesuada nisl sem quis urna. Pellentesque consequat tincidunt lorem ut feugiat. Donec bibendum ullamcorper arcu, quis consectetur elit. Curabitur in nisi euismod, iaculis nunc quis, semper sem.
+              <b>Sri Ram Construction</b> was founded in the year <b>1995</b> by <b>Sri Sanjay Kumar</b>. He foresaw the development of Ranchi from a budding city to a hub of development, and even before many had thought of it, he put his dreams into action, and laid the foundation of <b>Sri Ram Construction</b>.</Text>
+              <Text as="p"><b>As he says,</b></Text>
+              <Text as="h3" sx={styles.summary}>
+              <i>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</i>
               </Text>
+              
             </div>
           </div>
           <Box as="figure" sx={styles.illustration} className="illustration">

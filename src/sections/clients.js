@@ -11,8 +11,7 @@ const Clients = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="A home perfect for you."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa vel nunc pellentesque imperdiet."
+          title="Some of our esteemed Clients"
         />
         <Flex as="figure" sx={styles.illustration}>
           <Image src={clients} alt="clients" />

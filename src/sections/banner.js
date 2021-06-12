@@ -17,7 +17,7 @@ const Banner = () => {
               Many things.
             </Heading>
             <Text as="p">
-            Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.
+            <b>Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.</b>
             </Text>
            <br />
            
