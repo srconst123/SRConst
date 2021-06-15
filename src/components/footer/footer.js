@@ -41,7 +41,7 @@ export default function Footer() {
               }
             }>
               <b>Email:</b> enquiry@sriramconstruction.com<br />
-              <b>Phone:</b> 0651-2285544<br />
+              <b>Phone:</b> 9234681459<br />
             </Text></Box>
           
         <Box sx={styles.left}>
