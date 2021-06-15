@@ -29,10 +29,10 @@ export default function Footer() {
               }
             }>
               <b>Address:</b><br />
-              <i>2nd Floor, Ganpati Complex</i><br />
-              <i>Opp. Sidhu Kanhu Park</i><br />
-              <i>Ranchi College Road</i><br />
-              <i>Ranchi, PIN: 834008</i><br />
+              2nd Floor, Ganpati Complex<br />
+              Opp. Sidhu Kanhu Park<br />
+              Ranchi College Road<br />
+              Ranchi, PIN: 834008<br />
             </Text></Box>
             <Box as="ul" sx={styles.footer}>
             <Text as="p" sx={
@@ -45,9 +45,9 @@ export default function Footer() {
             </Text></Box>
           
         <Box sx={styles.left}>
-          <Logo />
+         
           <Text as="p">
-            &copy; {new Date().getFullYear()} All right reserved
+            Sri Ram Construction &copy; {new Date().getFullYear()} All right reserved
             
           </Text>
         </Box>

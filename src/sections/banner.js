@@ -21,7 +21,7 @@ const Banner = () => {
             </Text>
            <br />
            
-            <SubscriptionForm sx={styles.subscriptionForm} />
+            
           </Box>
         </Box>
       </Container>

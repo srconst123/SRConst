@@ -1,45 +1,41 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Heading, Text } from 'theme-ui';
+import { jsx, Box, Container, Heading, Flex, Text } from 'theme-ui';
 import Image from 'components/image';
 import illustration from 'assets/images/support-2.png';
-
-const data = [
-  {
-    id: 1,
-    title: 'Email client support',
-    text: `Ultimate access to all credit popular exercises and assessments materials`,
-  },
-  {
-    id: 2,
-    title: 'Live ticket support',
-    text: `Total assessment corrections with live support tickets download access system`,
-  },
-];
+import SectionHeading from 'components/section-heading';
 
 const Support = () => {
   return (
     <section id="support" sx={styles.section}>
       <Container>
-        <div sx={styles.grid}>
+        
           <div sx={styles.content}>
-            <div sx={styles.heading}>
-              <Heading sx={styles.title}>
-                About Us
-              </Heading>
+           
+            <SectionHeading
+          sx={styles.heading}
+          
+          title="About Us"
+        />
               <Text as="p" sx={styles.summary}>
-              <b>Sri Ram Construction</b> was founded in the year <b>1995</b> by <b>Sri Sanjay Kumar</b>. He foresaw the development of Ranchi from a budding city to a hub of development, and even before many had thought of it, he put his dreams into action, and laid the foundation of <b>Sri Ram Construction</b>.</Text>
-              <Text as="p"><b>As he says,</b></Text>
-              <Text as="p" sx={styles.summary}>
-              <b>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</b>
+              <b>Sri Ram Construction was founded in the year 1995 by Sri Sanjay Kumar. He foresaw the development of Ranchi from a budding city to a hub of development, and even before many had thought of it, he put his dreams into action, and laid the foundation of Sri Ram Construction.
+              <br />With over 24 years of experience in construction and real estate development, Sanjay Kumar, as proprietor of Sri Ram Construction has been at the forefront of the real estate industry, through building world class residential and commercial projects. As a construction and contracting company, Sri Ram Construction successfully executed many commercial and residential project as well as Civil and Electrical work in Jharkhand and Bihar.
+              <br />To undertake this ever expanding work, Sri Ram Construction today, is backed by a professional and competent team constantly growing workforce of currently over fifty, experienced Engineers, Skilled Supervisor, Civil Foreman, Architects, Chartered Accountant, MBA, etc.</b>
               </Text>
               
+              
             </div>
-          </div>
-          <Box as="figure" sx={styles.illustration} className="illustration">
-            <Image src={illustration} alt="illustration" />
-          </Box>
-        </div>
+          
+         
+            <Flex as="figure" sx={styles.illustration}>
+            <Image src={illustration} alt="illustration" width="300px" alignItems="center"/>
+          </Flex>
+          <div>
+          <Box sx={styles.inner}>
+          <Text as="h3" sx={styles.summary}>
+              <b>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</b>
+              </Text></Box></div>
+        
       </Container>
     </section>
   );
@@ -76,7 +72,7 @@ const styles = {
     gridColumn: [null, null, null, '1/3', 'unset'],
     maxWidth: [null, null, null, 420, 'none'],
     mx: [null, null, null, 'auto', 'unset'],
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['center', null, null, 'center'],
     h2: {
       color: 'heading',
       fontFamily: 'headingAlt',
@@ -100,8 +96,34 @@ const styles = {
       textAlign: ['center', null, null, null, 'left'],
     },
   },
-  illustration: {
+  inner: {
+    padding: ['45px 30px 50px', '45px 50px', '45px 50px', '45px 50px', '45px 50px', '45px 70px'],
+    mt: [0, null, null, null, null],
+    position: 'relative',
+    zIndex: '10',
+    backgroundColor: 'primary',
+    //backgroundImage: ['none', null, null, null, null, `url(${BgShape})`],
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '60% center',
+    borderRadius: '10px',
     display: 'flex',
     alignItems: 'center',
+    textAlign: ['center', null, null, 'left'],
+    flexDirection: ['column', null, null, 'row'],
+    justifyContent: ['center', null, null, 'space-between'],
   },
+  illustration: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: [3, null, null, 0],
+    marginBottom: [3,null,null,0],
+  },
+  p: {
+      color: 'textSecondary',
+      fontSize: ['13px', null, null, 2, '15px', 2],
+      lineHeight: [1.86, null, null, null, 1.86, 2.25],
+      maxWidth: 470,
+      m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
+      textAlign: ['center', null, null, null, 'left'],
+    },
 };
