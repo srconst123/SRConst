@@ -13,12 +13,13 @@ const Banner = () => {
             <Heading as="h1">
               One place.
             </Heading>
-            <Heading as="h1">
+            <Heading as="h1" sx={{
+              textAlign:'right',
+            }}>
               Many things.
             </Heading>
-            <Text as="p">
-            <b>Modern conveniences and entertainment, all within your reach. We offer you a complete package of modern living.</b>
-            </Text>
+            <Heading as="pp">.
+            </Heading>
            <br />
            
             
@@ -58,6 +59,13 @@ const styles = {
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [0, null, null, null, '-1.5px'],
       color: 'textSecondary',
+    },
+    pp: {
+      fontFamily: 'headingAlt',
+      fontSize: [0, null, null, 10, 12, 45, 16],
+      lineHeight: [1.31, null, null, 1.5, null, 1.26],
+      letterSpacing: [0, null, null, null, '-1.5px'],
+      color: 'white',
     },
     p: {
       fontSize: ['15px', null, null, 2, 3],

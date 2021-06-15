@@ -12,8 +12,12 @@ export default [
     label: 'FEATURE',
   },
   {
-    path: 'shreedham',
-    label: 'SHREE DHAM',
+    path: '#',
+    label: 'ONGOING PROJECTS',
+  },
+  {
+    path: '#',
+    label: 'READY TO MOVE',
   },
   {
     path: 'clients',
