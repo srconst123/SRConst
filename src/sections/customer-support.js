@@ -23,7 +23,7 @@ const CustomerSupport = () => {
         <Box sx={styles.grid}>
         
           <Box sx={styles.illustration}>
-          <a className="rr" href="https://rzp.io/l/mOzQnYq"><Image src={support} loading="lazy" alt="support" /></a>
+          <a className="rr" href="#"><Image src={support} loading="lazy" alt="support" /></a>
           </Box>
           
           <Box sx={styles.content}>

@@ -9,7 +9,7 @@ const SubscriptionForm = ({ buttonLabel, ...props }) => {
         //Email
       //</Label>
       //<Input type="email" id="email" placeholder="Enter Email address" />
-      <Button>{}<a className="rr" href="https://rzp.io/l/mOzQnYq">Book Now</a><style>{"\
+      <Button>{}<a className="rr" href="#">Book Now</a><style>{"\
       .rr{\
         color:white;\
         text-decoration:none;\
