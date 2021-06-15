@@ -30,8 +30,8 @@ const Support = () => {
               <Text as="p" sx={styles.summary}>
               <b>Sri Ram Construction</b> was founded in the year <b>1995</b> by <b>Sri Sanjay Kumar</b>. He foresaw the development of Ranchi from a budding city to a hub of development, and even before many had thought of it, he put his dreams into action, and laid the foundation of <b>Sri Ram Construction</b>.</Text>
               <Text as="p"><b>As he says,</b></Text>
-              <Text as="h3" sx={styles.summary}>
-              <i>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</i>
+              <Text as="p" sx={styles.summary}>
+              <b>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</b>
               </Text>
               
             </div>
