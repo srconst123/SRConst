@@ -1,23 +1,23 @@
 export default [
   {
     path: 'home',
-    label: 'Home',
+    label: 'HOME',
   },
   {
     path: 'support',
-    label: 'About Us',
+    label: 'ABOUT US',
   },
   {
     path: 'features',
-    label: 'Feature',
+    label: 'FEATURE',
   },
   {
     path: 'shreedham',
-    label: 'Shree Dham',
+    label: 'SHREE DHAM',
   },
   {
     path: 'clients',
-    label: 'Clients',
+    label: 'CLIENTS',
   },
   {
     path: 'faq',
