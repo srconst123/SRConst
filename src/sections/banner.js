@@ -14,7 +14,7 @@ const Banner = () => {
               One place.
             </Heading>
             <Heading as="h1" sx={{
-              textAlign:'right',
+              textAlign:'center',
             }}>
               Many things.
             </Heading>
@@ -58,7 +58,7 @@ const styles = {
       fontSize: [9, null, null, 10, 12, 45, 16],
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [0, null, null, null, '-1.5px'],
-      color: 'textSecondary',
+      color: ['red',null,null,null,'textSecondary'],
     },
     pp: {
       fontFamily: 'headingAlt',
