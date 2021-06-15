@@ -58,7 +58,9 @@ const styles = {
       fontSize: [9, null, null, 10, 12, 45, 16],
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [0, null, null, null, '-1.5px'],
-      color: ['red',null,null,null,'textSecondary'],
+      color: ['black',null,null,null,'black'],
+      background:'white',
+      opacity:'80%',
     },
     pp: {
       fontFamily: 'headingAlt',
