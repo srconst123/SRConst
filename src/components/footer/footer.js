@@ -3,6 +3,8 @@
 import { jsx, Box, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
+import Widget from 'components/footer/widget';
+import { layout } from 'styled-system';
 export default function Footer() {
   return (
     <footer
@@ -20,6 +22,28 @@ export default function Footer() {
           paddingBottom: [30, 65],
         }}
       >
+        <Box as="ul" sx={styles.footer}>
+            <Text as="p" sx={
+              {
+                paddingBottom: [2,2],
+              }
+            }>
+              <b>Address:</b><br />
+              <i>2nd Floor, Ganpati Complex</i><br />
+              <i>Opp. Sidhu Kanhu Park</i><br />
+              <i>Ranchi College Road</i><br />
+              <i>Ranchi, PIN: 834008</i><br />
+            </Text></Box>
+            <Box as="ul" sx={styles.footer}>
+            <Text as="p" sx={
+              {
+                paddingBottom: [5,5],
+              }
+            }>
+              <b>Email:</b> enquiry@sriramconstruction.com<br />
+              <b>Phone:</b> 0651-2285544<br />
+            </Text></Box>
+          
         <Box sx={styles.left}>
           <Logo />
           <Text as="p">
@@ -27,6 +51,7 @@ export default function Footer() {
             
           </Text>
         </Box>
+        
       </Container>
     </footer>
   );

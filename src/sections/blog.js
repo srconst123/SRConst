@@ -17,7 +17,6 @@ const data = [
     title: 'Introducing our newest team with great experience',
     desc:
       'Brian Halligan knows that you need more than a great product to have a great brand.',
-    link: '#',
   },
   {
     id: 2,
@@ -25,7 +24,6 @@ const data = [
     title:
       'New banking application has  developed and we expecting good feedback',
     desc: '',
-    link: '#',
   },
   {
     id: 3,
@@ -53,8 +51,8 @@ const Blog = () => {
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 14] }}
-          slogan="Latest newsfeed"
-          title="Our recent blog post that updated"
+          slogan="Our Projects"
+          title="Some of out recent projects"
         />
         <Masonry sx={styles.masonry} options={masonryOptions}>
           {data.map((post) => (

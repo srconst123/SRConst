@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
+import { jsx, Box, Container, Button, Grid, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
@@ -23,7 +23,7 @@ const CustomerSupport = () => {
         <Box sx={styles.grid}>
         
           <Box sx={styles.illustration}>
-            <Image src={support} loading="lazy" alt="support" />
+          <a className="rr" href="https://rzp.io/l/mOzQnYq"><Image src={support} loading="lazy" alt="support" /></a>
           </Box>
           
           <Box sx={styles.content}>
@@ -47,6 +47,13 @@ const CustomerSupport = () => {
                 </Text>
               ))}
             </Grid>
+            <Container sx={{padding:[2,2]}}><Button><a target="_blank" className="rr" href="https://drive.google.com/file/d/1fQqzIPGCwlzdNc1HdCseH0ZtA7TtCjJ8/view?usp=sharing">View Brochure</a><style>{"\
+      .rr{\
+        color:black;\
+        text-decoration:none;\
+      }\
+    "}</style></Button></Container>
+    <Container sx={{padding:[2,2]}}><Button ><a target="_blank" className="rr" href="https://drive.google.com/file/d/1DW67Pkr6bgbUtJSG7F4Gdwq-cLfRUO5Y/view?usp=sharing">Legal Documents</a></Button></Container>
           </Box>
         </Box>
       </Container>

@@ -4,6 +4,7 @@ import BgShape from 'assets/cta-shape-1.svg';
 import btnShape from 'assets/cta-btn-shape-1.svg';
 const CallToAction = () => {
   return (
+    
     <Box sx={styles.wrapper}>
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
@@ -12,7 +13,7 @@ const CallToAction = () => {
             Feel free to contact us.
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}><a className="rr" href= "mailto:adarsh.gupta.aura3@gmail.com">CONTACT US NOW</a><style>{"\
+            <Button sx={styles.btn}><a className="rr" href= "mailto:enquiry@sriramconstruction.com">CONTACT US NOW</a><style>{"\
       .rr{\
         color:#ECF2F7;\
         text-decoration:none;\
