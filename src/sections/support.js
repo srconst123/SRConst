@@ -10,7 +10,7 @@ const Support = () => {
     <section id="support" sx={styles.section}>
       <Container>
         
-          <div sx={styles.content}>
+       
            
             <SectionHeading
           sx={styles.heading}
@@ -24,7 +24,7 @@ const Support = () => {
               </Text>
               
               
-            </div>
+         
           
          
             <Flex as="figure" sx={styles.illustration}>
@@ -68,6 +68,9 @@ const styles = {
     display: [null, null, null, 'grid', 'unset'],
     gridTemplateColumns: [null, null, null, 'repeat(2, 1fr)', 'unset'],
   },
+  summary: {
+    textAlign: 'center',
+  },
   heading: {
     gridColumn: [null, null, null, '1/3', 'unset'],
     maxWidth: [null, null, null, 420, 'none'],
@@ -80,7 +83,7 @@ const styles = {
       fontWeight: 500,
       lineHeight: [1.33, null, 1.4, 1.53],
       letterSpacing: ['-0.5px', null, null, '-1px'],
-      textAlign: ['center', null, null, null, 'left'],
+      textAlign: ['center', null, null, null, 'center'],
       span: {
         backgroundSize: 'cover',
         px: 2,
@@ -93,7 +96,7 @@ const styles = {
       lineHeight: [1.86, null, null, null, 1.86, 2.25],
       maxWidth: 470,
       m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
-      textAlign: ['center', null, null, null, 'left'],
+      textAlign: ['center', null, null, null, 'center'],
     },
   },
   inner: {
@@ -108,7 +111,7 @@ const styles = {
     borderRadius: '10px',
     display: 'flex',
     alignItems: 'center',
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['center', null, null, 'center'],
     flexDirection: ['column', null, null, 'row'],
     justifyContent: ['center', null, null, 'space-between'],
   },
@@ -124,6 +127,6 @@ const styles = {
       lineHeight: [1.86, null, null, null, 1.86, 2.25],
       maxWidth: 470,
       m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
-      textAlign: ['center', null, null, null, 'left'],
+      textAlign: ['center', null, null, null, 'center'],
     },
 };
