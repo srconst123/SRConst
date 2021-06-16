@@ -1,10 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Button, Grid, Heading, Text } from 'theme-ui';
+import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
-import support from 'assets/images/support.png';
 import SectionHeading from 'components/section-heading';
+import React from "react";
+import { UncontrolledCarousel, Button, Row, Col, Modal, ModalBody, ModalFooter } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const list = [
   'Gated Community',
@@ -13,25 +15,71 @@ const list = [
   '24x7 Security',
   'Pool/Billiards',
   'Badminton Court',
+  'High Speed Lift',
+  'Lightning Arrester',
+  'Table Tennis',
+  'Club & Gym',
+];
+
+const items = [
+  {
+    src: require("assets/images/shreedham/1.jpg"),
+    altText: "Slide 1",
+    caption: "",
+    header: "",
+    key: "1",
+  },
+  {
+    src: require("assets/images/shreedham/2.jpeg"),
+    altText: "Slide 2",
+    caption: "",
+    header: "",
+    key: "2",
+  },
+  {
+    src: require("assets/images/shreedham/3.jpg"),
+    altText: "Slide 3",
+    caption: "",
+    header: "",
+    key: "3",
+  },
+  {
+    src: require("assets/images/shreedham/4.jpeg"),
+    altText: "Slide 4",
+    caption: "",
+    header: "",
+    key: "3",
+  },
+  {
+    src: require("assets/images/shreedham/5.jpeg"),
+    altText: "Slide 5",
+    caption: "",
+    header: "",
+    key: "3",
+  },
 ];
 
 const CustomerSupport = () => {
+  const [modalOpen, setModalOpen] = React.useState(false);
   return (
     <Box as="section" sx={styles.section} id="shreedham">
-      <Container>
-      <SectionHeading slogan="Our Latest Project"></SectionHeading>
-        <Box sx={styles.grid}>
+      <Container sx={{
+        pt:'100px',
+        pb:'80px',
+      }}>
         
-          <Box sx={styles.illustration}>
-          <a className="rr" href="#"><Image src={support} loading="lazy" alt="support" /></a>
-          </Box>
           
           <Box sx={styles.content}>
+          <Row>
+    <Col md="8" className="mx-auto">
+      <UncontrolledCarousel items={items} />
+    </Col>
+  </Row>
             
             <Heading sx={styles.title}>
             Shree Dham Residential Complex 
             </Heading>
-            <Text as="p" sx={styles.summary}>
+            <Text as="p" sx={styles.p}>
             It is an upcoming project of Sri Ram Construction near Morabadi Ground. The Project is situated at a walking distance approx. 500 meter from Morabadi Football Ground, Ranchi.
             <br /> The Project caters to the needs of EWS/LIG/MIG and falls under <b>Affordable Housing</b> having <b>1/2/3 BHK</b> suites.
             </Text>
@@ -53,9 +101,69 @@ const CustomerSupport = () => {
         text-decoration:none;\
       }\
     "}</style></Button></Container>
-    <Container sx={{padding:[2,2]}}><Button ><a target="_blank" className="rr" href="https://drive.google.com/file/d/1DW67Pkr6bgbUtJSG7F4Gdwq-cLfRUO5Y/view?usp=sharing">Legal Documents</a></Button></Container>
-          </Box>
-        </Box>
+    
+         
+          <Button
+        color="primary"
+        type="button"
+        onClick={() => setModalOpen(!modalOpen)}
+      >
+        Book Now
+      </Button>
+      <Modal
+      toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
+        <div className=" modal-header">
+          <h5 className=" modal-title" id="exampleModalLabel">
+            Shree Dham Residential Complex
+          </h5>
+          <button
+            aria-label="Close"
+            className=" close"
+            type="button"
+            onClick={() => setModalOpen(!modalOpen)}
+          >
+            <span aria-hidden={true}>×</span>
+          </button>
+        </div>
+        <ModalBody>
+          <h2 sx={{
+            textAlign:'center',
+          }}>Floor Structure</h2>
+          <h4 sx={{ textAlign:'center'}}>Block A</h4>
+          <p sx={{ textAlign:'center'}}><b>FLAT</b>&ensp;&ensp;<b>TYPE</b>&ensp;&ensp;&ensp;<b>AREA</b></p>
+          <p sx={{ textAlign:'center'}}>A&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1497.74</p>
+          <p sx={{ textAlign:'center'}}>B&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1527.01</p>
+          <p sx={{ textAlign:'center'}}>C&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1441.31</p>
+          <p sx={{ textAlign:'center'}}>D&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1527.01</p>
+          <p sx={{ textAlign:'center'}}>E&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1497.74</p>
+          <p sx={{ textAlign:'center'}}>F&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1509.97</p>
+          <h4 sx={{ textAlign:'center'}}>Block A</h4>
+          <p sx={{ textAlign:'center'}}><b>FLAT</b>&ensp;&ensp;<b>TYPE</b>&ensp;&ensp;&ensp;<b>AREA</b></p>
+          <p sx={{ textAlign:'center'}}>A&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1516.94</p>
+          <p sx={{ textAlign:'center'}}>B&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
+          <p sx={{ textAlign:'center'}}>C&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
+          <p sx={{ textAlign:'center'}}>D&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
+          <p sx={{ textAlign:'center'}}>E&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1516.94</p>
+          <p sx={{ textAlign:'center'}}>F&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1612.31</p>
+          <p sx={{ textAlign:'center'}}>G&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;616.99</p>
+          <p sx={{ textAlign:'center'}}>H&ensp;&ensp;&ensp;&ensp;2BHK&ensp;&ensp;&ensp;1071.31</p>
+          <p sx={{ textAlign:'center'}}>I&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1612.31</p>
+
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color="secondary"
+            type="button"
+            onClick={() => setModalOpen(!modalOpen)}
+          >
+            Close
+          </Button>
+          <a href="https://rzp.io/l/mOzQnYq"><Button color="primary" type="button">
+            Pay Booking Amount
+          </Button></a>
+        </ModalFooter>
+      </Modal>
+      </Box>
       </Container>
     </Box>
   );
@@ -69,27 +177,17 @@ const styles = {
     pb: [null, null, null, 8, 0],
   },
   grid: {
-    gap: [null, null, null, null, 2],
-    display: ['flex', null, null, 'grid'],
+    gap: [null, null, null, null, null],
+    display: ['flex', null, null, 'flex'],
     flexDirection: ['column-reverse', null, null, 'unset'],
     alignItems: 'center',
-    gridTemplateColumns: ['1fr', null, null, null, '470px 1fr', '1fr 549px'],
-  },
-  illustration: {
-    textAlign: 'center',
-    position: 'relative',
-    display: 'flex',
-    alignItems: 'center',
-    mt: [2, null, null, 0, 4, 0],
-    img: {
-      maxWidth: ['100%', null, null, null, null, '100%'],
-    },
+    gridTemplateColumns: ['1fr', null, null, null, '1fr', '1fr'],
   },
   content: {
     marginTop: [null, null, null, null, null, -16],
     maxWidth: [null, null, null, 420, 560, 'none'],
     margin: [null, null, null, '0 auto', 'unset'],
-    textAlign: ['center', null, null, null, 'left'],
+    textAlign: ['center', null, null, null, 'center'],
   },
   title: {
     color: 'heading',
@@ -97,8 +195,28 @@ const styles = {
     fontSize: [4, null, null, 8, null, null, 11],
     fontWeight: 500,
     lineHeight: [1.33, null, 1.4, 1.53],
+    textAlign: ['center', null, null, null, 'center'],
+    pt:'10px',
+    p: {
+      color: 'textSecondary',
+      fontSize: ['13px', null, null, 2, '15px', 2],
+      lineHeight: [1.86, null, null, null, 1.86, 1.86],
+      m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
+      textAlign: ['center', null, null, null, 'center'],
+    },
     letterSpacing: ['-0.5px', null, null, '-1px'],
     mb: 3,
+    span: {
+      backgroundSize: 'cover',
+      px: 2,
+    },
+  },
+  p: {
+    color: 'textSecondary',
+    fontSize: ['13px', null, null, 2, '15px', 2],
+    lineHeight: [1.86, null, null, null, 1.86, 2.25],
+    m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
+    textAlign: ['center', null, null, null, 'center'],
     span: {
       backgroundSize: 'cover',
       px: 2,
@@ -113,8 +231,8 @@ const styles = {
   },
   list: {
     gap: '0 18px',
-    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
-    justifyContent: [null, null, null, 'center', 'unset'],
+    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(5, 200px)'],
+    justifyContent: [null, null, null, 'center', 'center'],
     listStyle: 'none',
     mt: [4, null, null, 5, 4, 5],
     p: 0,

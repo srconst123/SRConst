@@ -12,7 +12,7 @@ export default [
     label: 'FEATURE',
   },
   {
-    path: '#',
+    path: '/ongoing',
     label: 'ONGOING PROJECTS',
   },
   {

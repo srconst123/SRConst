@@ -23,7 +23,6 @@ export default function IndexPage() {
         <Banner />
         <Support />
         <UltimateFeatures />
-        <CustomerSupport />
         
         <Clients />
         

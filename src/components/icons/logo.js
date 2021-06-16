@@ -3,7 +3,7 @@ import Logos from "assets/images/logo.png"
 
 const Logo = ({ white, ...props }) => {
   return (
-    <img src={Logos} alt="Logo" width="100px"/>
+    <a href="/#"><img src={Logos} alt="Logo" width="100px"/></a>
   );
 };
 

@@ -3,7 +3,7 @@
 import { jsx, Box, Image, Heading, Text, Button } from 'theme-ui';
 import { LearnMore } from 'components/link';
 
-const Feature = ({ data, ...props }) => {
+const Feature2 = ({ data, ...props }) => {
   return (
     <Box sx={styles.feature} {...props}>
       <Box as="figure">
@@ -12,13 +12,12 @@ const Feature = ({ data, ...props }) => {
       <Box>
         <Heading as="h4">{data?.title}</Heading>
         <Text as="p">{data?.description}</Text>
-        {data?.path && <LearnMore path={data?.path} />}
       </Box>
     </Box>
   );
 };
 
-export default Feature;
+export default Feature2;
 
 const styles = {
   feature: {

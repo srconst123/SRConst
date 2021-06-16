@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import Feature from 'components/cards/feature';
+import Feature2 from 'components/cards/feature2';
 
 import icon1 from 'assets/images/features/1.png';
 import icon2 from 'assets/images/features/2.png';
@@ -46,7 +46,7 @@ const UltimateFeatures = () => {
         />
         <Box sx={styles.grid}>
           {data?.map((item) => (
-            <Feature className="feature-item" key={item.id} data={item} />
+            <Feature2 className="feature-item" key={item.id} data={item} />
           ))}
         </Box>
       </Container>

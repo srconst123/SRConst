@@ -6,7 +6,7 @@ import Sticky from 'react-stickynode';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import NavbarDrawer from './navbar-drawer';
 import Logo from 'components/logo';
-import { NavLink } from 'components/link';
+import { Link } from 'components/link';
 
 import menuItems from './header.data';
 
@@ -37,9 +37,15 @@ export default function Header() {
           <Container sx={styles.container}>
             <Logo sx={styles.logo} />
             <nav as="nav" sx={styles.navbar} className={'navbar'}>
-              {menuItems.map(({ path, label }, i) => (
-                <NavLink key={i} path={path} label={label} />
-              ))}
+             
+                <a href='/#home'>HOME</a>
+                <a href='/#support'>ABOUT US</a>
+                <a href='/#features'>FEATURE</a>
+                <a href='/ongoing'>ONGOING PROJECTS</a>
+                <a href='/readytomove'>READY TO MOVE</a>
+                <a href='/#clients'>CLIENTS</a>
+                <a href='/#faq'>FAQ</a>
+             
             </nav>
             <NavbarDrawer />
           </Container>
@@ -83,6 +89,8 @@ const styles = {
       fontWeight: 400,
       color: 'heading',
       padding: 0,
+      textDecoration:'none',
+      behaviour:'smooth',
       transition: 'all 0.3s ease-in-out 0s',
       '+ a': {
         ml: 7,
@@ -90,6 +98,7 @@ const styles = {
     },
     '.active': {
       color: 'primary',
+
     },
   },
 };
