@@ -32,7 +32,7 @@ const Support = () => {
           </Flex>
           <div>
           <Box sx={styles.inner}>
-          <Text as="h3" sx={styles.summary}>
+          <Text as="p" sx={styles.summary}>
               <b>"Our vision gives us a sense of direction and destination to be respectable building contractors delivering beyond expectations, always. It captures our aspiration of being the best at everything we do. Our mission is to procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time."</b>
               </Text></Box></div>
         

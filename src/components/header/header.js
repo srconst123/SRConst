@@ -73,14 +73,14 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    // position: ['relative', null, null, 'static'],
+    //position: ['relative', null, null, 'static'],
   },
   logo: {
     mr: [null, null, null, null, 30, 12],
   },
   navbar: {
     display: ['none', null, null, null, 'flex'],
-    alignItems: 'center',
+    alignItems: 'left',
     flexGrow: 1,
     // justifyContent: 'center',
     a: {
