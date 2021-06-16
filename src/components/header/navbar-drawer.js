@@ -41,22 +41,17 @@ const NavbarDrawer = () => {
     >
       <Box sx={styles.wrapper}>
         <Logo sx={styles.logo} />
-        <Box as="ul" sx={styles.navbar}>
-          {menuItems.map(({ path, label }, i) => (
-            <Box as="li" key={i}>
-              <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {label}
-              </Link>
-            </Box>
-          ))}
-        </Box>
+        <nav as="nav" sx={styles.navbar} className={'navbar'}>
+             
+                <a href='/#home'>&nbsp;HOME</a>
+                <a href='/#support'>ABOUT US</a>
+                <a href='/#features'>FEATURE</a>
+                <a href='/ongoing'>ONGOING PROJECTS</a>
+                <a href='/readytomove'>READY TO MOVE</a>
+                <a href='/#clients'>CLIENTS</a>
+                <a href='/#faq'>FAQ</a>
+             
+            </nav>
         <Button variant="primary" sx={styles.donateNow}>
           <a href="#" className="rr">Book Now</a><style>{"\
       .rr{\
@@ -138,7 +133,24 @@ const styles = {
     '.active': {
       color: 'primary',
     },
+    a: {
+      cursor: 'pointer',
+      display: ['flex'],
+      fontWeight: 400,
+      color: 'heading',
+      padding: 0,
+      position: 'relative',
+      minHeight: 44,
+      marginLeft: 6,
+      alignItems: 'center',
+      textDecoration:'none',
+      behaviour:'smooth',
+      transition: 'all 0.3s ease-in-out 0s',
+      '+ a': {
+        ml: 7,
+      },},
   },
+
   donateNow: {
     fontSize: 1,
     minHeight: 45,
