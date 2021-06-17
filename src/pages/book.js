@@ -3,12 +3,11 @@ import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout2';
-import OngBuild from 'sections/ongbuiding'
+import Booking from 'sections/booking'
 import CallToAction from 'components/footer/calltoaction'
-import CustomerSupport from 'sections/customer-support';
 
 
-export default function ShreeDham() {
+export default function PageThree() {
     return (
       <ThemeProvider theme={theme}>
         <Layout>
@@ -16,10 +15,8 @@ export default function ShreeDham() {
             title="Sri Ram Construction"
             description="Your house. Our duty."
           />
-        
-            <CustomerSupport />
-            
-            <CallToAction />
+          <Booking />
+          <CallToAction />
        </Layout>
     </ThemeProvider>
   );

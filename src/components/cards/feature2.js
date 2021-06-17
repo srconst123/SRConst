@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Image, Heading, Text, Button } from 'theme-ui';
+import { jsx, Box, Image, Heading, Text, Button, } from 'theme-ui';
 import { LearnMore } from 'components/link';
 
 const Feature2 = ({ data, ...props }) => {

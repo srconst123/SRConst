@@ -103,66 +103,9 @@ const CustomerSupport = () => {
     "}</style></Button></Container>
     
          
-          <Button
-        color="primary"
-        type="button"
-        onClick={() => setModalOpen(!modalOpen)}
-      >
-        Book Now
-      </Button>
-      <Modal
-      toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
-        <div className=" modal-header">
-          <h5 className=" modal-title" id="exampleModalLabel">
-            Shree Dham Residential Complex
-          </h5>
-          <button
-            aria-label="Close"
-            className=" close"
-            type="button"
-            onClick={() => setModalOpen(!modalOpen)}
-          >
-            <span aria-hidden={true}>×</span>
-          </button>
-        </div>
-        <ModalBody>
-          <h2 sx={{
-            textAlign:'center',
-          }}>Floor Structure</h2>
-          <h4 sx={{ textAlign:'center'}}>Block A</h4>
-          <p sx={{ textAlign:'center'}}><b>FLAT</b>&ensp;&ensp;<b>TYPE</b>&ensp;&ensp;&ensp;<b>AREA</b></p>
-          <p sx={{ textAlign:'center'}}>A&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1497.74</p>
-          <p sx={{ textAlign:'center'}}>B&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1527.01</p>
-          <p sx={{ textAlign:'center'}}>C&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1441.31</p>
-          <p sx={{ textAlign:'center'}}>D&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1527.01</p>
-          <p sx={{ textAlign:'center'}}>E&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1497.74</p>
-          <p sx={{ textAlign:'center'}}>F&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1509.97</p>
-          <h4 sx={{ textAlign:'center'}}>Block A</h4>
-          <p sx={{ textAlign:'center'}}><b>FLAT</b>&ensp;&ensp;<b>TYPE</b>&ensp;&ensp;&ensp;<b>AREA</b></p>
-          <p sx={{ textAlign:'center'}}>A&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1516.94</p>
-          <p sx={{ textAlign:'center'}}>B&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
-          <p sx={{ textAlign:'center'}}>C&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
-          <p sx={{ textAlign:'center'}}>D&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;609.99</p>
-          <p sx={{ textAlign:'center'}}>E&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1516.94</p>
-          <p sx={{ textAlign:'center'}}>F&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1612.31</p>
-          <p sx={{ textAlign:'center'}}>G&ensp;&ensp;&ensp;&ensp;1BHK&ensp;&ensp;&ensp;616.99</p>
-          <p sx={{ textAlign:'center'}}>H&ensp;&ensp;&ensp;&ensp;2BHK&ensp;&ensp;&ensp;1071.31</p>
-          <p sx={{ textAlign:'center'}}>I&ensp;&ensp;&ensp;&ensp;3BHK&ensp;&ensp;&ensp;1612.31</p>
-
-        </ModalBody>
-        <ModalFooter>
-          <Button
-            color="secondary"
-            type="button"
-            onClick={() => setModalOpen(!modalOpen)}
-          >
-            Close
-          </Button>
-          <a href="https://rzp.io/l/mOzQnYq"><Button color="primary" type="button">
-            Pay Booking Amount
+    <a href="/book"><Button color="primary" type="button">
+            Unit Selector
           </Button></a>
-        </ModalFooter>
-      </Modal>
       </Box>
       </Container>
     </Box>
