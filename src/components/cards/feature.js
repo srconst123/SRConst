@@ -2,6 +2,8 @@
 /** @jsx jsx */
 import { jsx, Box, Image, Heading, Text, Button } from 'theme-ui';
 import { LearnMore } from 'components/link';
+import { IoIosArrowForward } from 'react-icons/io';
+import { keyframes } from '@emotion/react';
 
 const Feature = ({ data, ...props }) => {
   return (
@@ -12,7 +14,10 @@ const Feature = ({ data, ...props }) => {
       <Box>
         <Heading as="h4">{data?.title}</Heading>
         <Text as="p">{data?.description}</Text>
-        {data?.path && <LearnMore path={data?.path} />}
+        <a sx={{
+          color:'Primary',
+          textDecoration:'none',
+        }} href={data?.path}>Explore Now</a>
       </Box>
     </Box>
   );
@@ -62,6 +67,18 @@ const styles = {
     },
     a: {
       mt: [2, null, null, null, 6],
+    },
+  },
+  as: {
+    color: 'link',
+    cursor: 'pointer',
+    fontSize: [1, null, null, '15px'],
+    fontWeight: 500,
+    display: 'inline-flex',
+    alignItems: 'center',
+    svg: {
+      transform: 'translateX(3px)',
+      width: ['13px', null, null, '16px'],
     },
   },
 };
