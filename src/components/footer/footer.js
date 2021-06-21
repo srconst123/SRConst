@@ -45,7 +45,7 @@ export default function Footer() {
             </Text>
             </Box>
             <Container sx={{padding:'5px',}}>
-            <iframe sx={{alignItems:'right',}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.8685183243324!2d85.32816364661211!3d23.382837228502936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e115f977f16b%3A0x6fd5460d2d38e2bc!2sSri%20Ram%20Constructions!5e0!3m2!1sen!2sin!4v1623913010030!5m2!1sen!2sin" width="250" height="250" allowfullscreen="" loading="lazy"></iframe>
+            <iframe sx={{alignItems:'right',}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.8685183243324!2d85.32816364661211!3d23.382837228502936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e115f977f16b%3A0x6fd5460d2d38e2bc!2sSri%20Ram%20Constructions!5e0!3m2!1sen!2sin!4v1623913010030!5m2!1sen!2sin" width="250" height="250" allowFullScreen="true" loading="lazy"></iframe>
               </Container>
           
         <Box sx={styles.left}>

@@ -3,7 +3,7 @@
 import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
-import SectionHeading from 'components/section-heading';
+import Booking2 from 'components/booking2';
 import React from "react";
 import { UncontrolledCarousel, Button, Row, Col, Modal, ModalBody, ModalFooter } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -103,9 +103,41 @@ const CustomerSupport = () => {
     "}</style></Button></Container>
     
          
-    <a href="/book"><Button color="primary" type="button">
+    <Button color="primary"
+        type="button"
+        onClick={() => setModalOpen(!modalOpen)}>
             Unit Selector
-          </Button></a>
+          </Button>
+
+          <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
+        <div className=" modal-header">
+          <h5 className=" modal-title" id="exampleModalLabel">
+            Choose your Apartment
+          </h5>
+          <button
+            aria-label="Close"
+            className=" close"
+            type="button"
+            onClick={() => setModalOpen(!modalOpen)}
+          >
+            <span aria-hidden={true}>×</span>
+          </button>
+        </div>
+        <ModalBody>
+          <Booking2 />
+
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color="secondary"
+            type="button"
+            onClick={() => setModalOpen(!modalOpen)}
+          >
+            Close
+          </Button>
+        </ModalFooter>
+      </Modal>
+
       </Box>
       </Container>
     </Box>
