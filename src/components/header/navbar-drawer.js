@@ -52,13 +52,6 @@ const NavbarDrawer = () => {
                 <a href='/#faq'>FAQ</a>
              
             </nav>
-        <Button variant="primary" sx={styles.donateNow}>
-          <a href="#" className="rr">Book Now</a><style>{"\
-      .rr{\
-        color:white;\
-        text-decoration:none;\
-      }\
-    "}</style></Button>
       </Box>
     </Drawer>
   );
